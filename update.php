@@ -3,7 +3,7 @@ $nim = $_POST['nim'];
 $kode_mk = $_POST['kode_mk'];
 $nilai = $_POST['nilai'];
 
-$url='http://10.33.35.38/api/mahasiswa_api.php?nim='.$nim.'&kode_mk='.$kode_mk;
+$url='http://localhost/sait_project_api/rest_api.php?nim='.$nim.'&kode_mk='.$kode_mk;
 $ch = curl_init($url);
 $jsonData = array(
     'nim' => '$nim',
